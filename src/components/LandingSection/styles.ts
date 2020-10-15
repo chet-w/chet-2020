@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Section = styled.section`
   height: 100vh;
@@ -10,8 +11,13 @@ export const Section = styled.section`
   flex-direction: column;
 `;
 
-export const PrimarySectionArea = styled.div`
+export const PrimarySectionArea = styled(motion.div)`
   display: flex;
+
+  span {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 `;
 
 export const SecondarySectionArea = styled.div`
