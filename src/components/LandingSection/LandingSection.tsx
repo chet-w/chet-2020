@@ -1,7 +1,6 @@
 import React from 'react'
 import { Section, PrimarySectionArea, SecondarySectionArea } from './styles';
 import { Accent } from "../Accent";
-import { motion } from 'framer-motion';
 import FadeInUp from '../Animations/FadeInUp';
 
 export const LandingSection = () => (
@@ -37,7 +36,11 @@ const PrimaryTitle = () => {
 
 const SecondaryTitle = () => (
   <SecondarySectionArea>
-    <h3>I'm a <Accent>Front-end</Accent> Developer</h3>
+    <FadeInUp
+     transition={{ delay: 1.5 }}
+    >
+      <h3>I'm a <Accent>Front-end</Accent> Developer</h3>
+    </FadeInUp>
   </SecondarySectionArea>
 );
 
