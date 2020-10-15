@@ -7,18 +7,43 @@ export default {
     xl: 1280,
   },
   colors: {
-    blue: "#0099ff",
-    darkblue: "#00072e",
-    orange: "#FF9429",
+    light: {
+      primary: {
+        tint: "red",
+        base: "red",
+        shade: "red",
+      },
+      secondary: {
+        tint: "green",
+        base: "green",
+        shade: "green"
+      },
+      neutrals: {
+        darker: "#111",
+        dark: "#333",
+        base: "#777",
+        light: "#aaa",
+        lighter: "#ccc"
+      }
+    },
+    dark: {
+      primary: {
+        tint: "red",
+        base: "red",
+        shade: "red",
+      },
+      secondary: {
+        tint: "green",
+        base: "green",
+        shade: "green"
+      },
+      neutrals: {
+        darker: "#111",
+        dark: "#333",
+        base: "#777",
+        light: "#aaa",
+        lighter: "#ccc"
+      }
+    }
   },
-  opacity: {
-    0: 0,
-    25: 0.25,
-    50: 0.5,
-    75: 0.75,
-    100: 1,
-  },
-  py: (value: number | string) =>
-    `padding-top: ${value}; padding-bottom: ${value};`,
-  // Add anything else you'd like.
 };
