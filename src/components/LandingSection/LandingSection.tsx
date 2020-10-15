@@ -5,7 +5,7 @@ import FadeInUp from '../Animations/FadeInUp';
 import { Section } from '../Section';
 
 export const LandingSection = () => (
-  <Section>
+  <Section centered>
     <PrimaryTitle />
     <SecondaryTitle />
   </Section>
