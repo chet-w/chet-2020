@@ -1,34 +1,16 @@
 import React from "react";
-import styled, { ThemeProvider } from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
+import { ThemeProvider } from "styled-components";
 import { theme, GlobalStyles } from "../../styles";
+import { Header } from "../Header";
+import { Container } from "../Container";
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 2rem;
-`;
-
-const Layout: React.FC = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
-        }
-      }
-    }
-  `);
-
-  return (
-    <ThemeProvider theme={theme()}>
-      <Container>
-        <GlobalStyles />
-        <h1>Hello</h1>
-      </Container>
-    </ThemeProvider>
-  );
-};
+const Layout: React.FC = () => (
+  <ThemeProvider theme={theme()}>
+    <Header />
+    <Container>
+      <GlobalStyles />
+    </Container>
+  </ThemeProvider>
+);
 
 export { Layout };

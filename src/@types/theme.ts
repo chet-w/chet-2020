@@ -1,3 +1,7 @@
+export interface IGlobalStyles {
+  theme: ITheme
+}
+
 export interface ITheme {
   screens: {
     sm: number,

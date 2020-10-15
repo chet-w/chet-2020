@@ -1,9 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { ITheme } from "../@types/theme";
-
-interface IGlobalStyles {
-  theme: ITheme
-}
+import { IGlobalStyles } from "../@types/theme";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -22,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
                   "Helvetica Neue",
                   Arial,
                   sans-serif;
+    font-size: 16px;
   }
 `;
 
