@@ -20,10 +20,10 @@ export default {
       },
       neutrals: {
         darker: "#111",
-        dark: "#333",
-        base: "#777",
-        light: "#aaa",
-        lighter: "#ccc"
+        dark: "#666",
+        base: "#aaa",
+        light: "#ccc",
+        lighter: "#fff"
       }
     },
     dark: {

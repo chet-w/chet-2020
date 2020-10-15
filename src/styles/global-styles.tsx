@@ -9,11 +9,19 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${(props: IGlobalStyles) => props.theme.colors.light.neutrals.base};
-    color: white;
+    background: ${(props: IGlobalStyles) => props.theme.colors.light.neutrals.lighter};
+    color: ${(props: IGlobalStyles) => props.theme.colors.light.neutrals.darker};
   }
   html {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family:  "SF Pro",
+                  -apple-system,
+                  system-ui,
+                  BlinkMacSystemFont,
+                  "Segoe UI",
+                  Roboto,
+                  "Helvetica Neue",
+                  Arial,
+                  sans-serif;
   }
 `;
 
