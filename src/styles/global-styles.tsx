@@ -20,6 +20,10 @@ const GlobalStyles = createGlobalStyle`
                   sans-serif;
     font-size: 16px;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
 `;
 
 export { GlobalStyles };

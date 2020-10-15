@@ -8,9 +8,11 @@ const Layout: React.FC = ({ children }) => (
   <ThemeProvider theme={theme()}>
     <GlobalStyles />
     <Header />
-    <Container>
-      { children }
-    </Container>
+    <main>
+      <Container>
+        { children }
+      </Container>
+    </main>
   </ThemeProvider>
 );
 
