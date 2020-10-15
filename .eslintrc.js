@@ -17,17 +17,3 @@ module.exports = {
     "functional/no-try-statement": "off", // What's wrong with a try/catch? They are very useful with async/await.
   },
 };
-
-/**
- * eslint-config-react-app
- * Docs:
- * https://www.npmjs.com/package/eslint-config-react-app
- *
- * Source:
- * https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/index.js
- * This is a default eslint configuration created and maintained the Facebook team,
- * primarily for use with create-react-app.
- * This default configuration is well thought-out and actively maintained. It includes sensible rules for
- * React-specific apps, including hooks usage. It also includes accessibility rules via react-a11y as
- * well as rules for import statements and a few other niceties.
- */
