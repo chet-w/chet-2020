@@ -12,7 +12,7 @@ export const LandingSection = () => (
 const PrimaryTitle = () => (
   <PrimarySectionArea>
     <h1>
-      Hey,<br/>
+      Hi,<br/>
       I'm <Accent>Chet</Accent>
     </h1>
   </PrimarySectionArea>
@@ -20,6 +20,6 @@ const PrimaryTitle = () => (
 
 const SecondaryTitle = () => (
   <SecondarySectionArea>
-    <h2><Accent>Front-end</Accent> Developer</h2>
+    <h3>I'm a <Accent>Front-end</Accent> Developer</h3>
   </SecondarySectionArea>
 );

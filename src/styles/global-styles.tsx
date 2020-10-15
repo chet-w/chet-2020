@@ -24,6 +24,10 @@ const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 5rem;
   }
+
+  h3 {
+    font-size: 2rem;
+  }
 `;
 
 export { GlobalStyles };

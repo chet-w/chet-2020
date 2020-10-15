@@ -5,7 +5,7 @@ import { Container } from "../Container";
 export const Header = () => (
   <StyledHeader>
     <Container>
-      <h2>Header title</h2>
+      Header title
     </Container>
   </StyledHeader>
 );
