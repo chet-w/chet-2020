@@ -1,10 +1,15 @@
 import { createGlobalStyle } from "styled-components";
+import { ITheme } from "../@types/theme";
+
+interface IGlobalStyles {
+  theme: ITheme
+}
 
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${(props) => props.theme.colors.darkblue};
+    background: ${(props: IGlobalStyles) => props.theme.colors.light.neutrals.base};
     color: white;
   }
   html {
