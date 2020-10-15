@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from '../LandingSection/styles';
+import { Section } from '../Section';
 
 interface Props {
   

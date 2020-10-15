@@ -1,7 +1,8 @@
 import React from 'react'
-import { Section, PrimarySectionArea, SecondarySectionArea } from './styles';
+import { PrimarySectionArea, SecondarySectionArea } from './styles';
 import { Accent } from "../Accent";
 import FadeInUp from '../Animations/FadeInUp';
+import { Section } from '../Section';
 
 export const LandingSection = () => (
   <Section>
