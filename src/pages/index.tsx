@@ -1,10 +1,10 @@
 import React from "react";
 import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
+import { LandingSection } from "../components/LandingSection";
 
 const App = () => (
   <Layout>
-    <SEO />
+    <LandingSection />
   </Layout>
 );
 

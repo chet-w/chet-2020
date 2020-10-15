@@ -4,12 +4,15 @@ import { theme, GlobalStyles } from "../../styles";
 import { Header } from "../Header";
 import { Container } from "../Container";
 
-const Layout: React.FC = () => (
+const Layout: React.FC = ({ children }) => (
   <ThemeProvider theme={theme()}>
+    <GlobalStyles />
     <Header />
-    <Container>
-      <GlobalStyles />
-    </Container>
+    <main>
+      <Container>
+        { children }
+      </Container>
+    </main>
   </ThemeProvider>
 );
 
