@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Section, PrimarySectionArea, SecondarySectionArea } from './styles';
 import { Accent } from "../Accent";
 import { motion } from 'framer-motion';
+import FadeInUp from '../Animations/FadeInUp';
 
 export const LandingSection = () => (
   <Section>
@@ -12,55 +13,27 @@ export const LandingSection = () => (
 
 const PrimaryTitle = () => {
   
-  const list = {
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.3,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      transition: {
-        when: "afterChildren",
-      },
-    },
-  };
-
-  const item = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
-  }
-
-  const [animatedState, setAnimatedState] = useState("hidden");
-
-  useEffect(() => {
-    setTimeout(() => setAnimatedState("visible"), 1000);
-  }, []);
-
-
   return (
-    <PrimarySectionArea
-      initial="hidden"
-      animate={animatedState}
-      variants={list}
-    >
+    <PrimarySectionArea>
       <h1>
-        <motion.span variants={item}>
+        <FadeInUp>
           Hi,
-        </motion.span>
+        </FadeInUp>
         <br/>
-        <motion.span variants={item}>
+        <FadeInUp
+          transition={{ delay: 0.8 }}
+        >
           I'm 
-        </motion.span>
-        <motion.span variants={item}>
+        </FadeInUp>
+        <FadeInUp
+          transition={{ delay: 0.9 }}
+        >
           <Accent>Chet</Accent>
-        </motion.span>
+        </FadeInUp>
       </h1>
     </PrimarySectionArea>
-  )
-};
+  );
+}
 
 const SecondaryTitle = () => (
   <SecondarySectionArea>
