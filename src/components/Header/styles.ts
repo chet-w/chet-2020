@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { IGlobalStyles } from "../../@types/theme";
 import { Container } from "../Container";
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled(motion.header)`
   height: 5rem;
   background: ${(props: IGlobalStyles) => props.theme.colors.light.neutrals.lighter};
   position: fixed;

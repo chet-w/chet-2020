@@ -3,15 +3,30 @@ import { Link } from "gatsby";
 import { StyledHeader, StyledHeaderLinks } from './styles';
 import { Container } from "../Container";
 import { Accent } from '../Accent';
+import useScrollDistance from "../../hooks/useScrollDistance"
 
-export const Header = () => (
-  <StyledHeader>
-    <Container>
-      <h3><Accent>Chet</Accent></h3>
-      <HeaderLinks />
-    </Container>
-  </StyledHeader>
-);
+export const Header = () => {
+  
+  const hasBeenScrolled = useScrollDistance({ threshold: window.innerHeight/2 });
+
+  const variants = {
+    out: { opacity: 0, y: -50 },
+    in: { opacity: 1, y: 0 }
+  };
+
+  return (
+    <StyledHeader
+      variants={variants}
+      initial="out"
+      animate={hasBeenScrolled ? "in" : "out"}
+    >
+      <Container>
+        <h3><Accent>Chet</Accent></h3>
+        <HeaderLinks />
+      </Container>
+    </StyledHeader>
+  )
+};
 
 const HeaderLinks = () => (
   <StyledHeaderLinks>
