@@ -1,5 +1,6 @@
 import React from 'react'
 import { Section } from '../Section';
+import { Card } from './styles';
 
 interface Props {
   
@@ -7,8 +8,11 @@ interface Props {
 
 export const AboutSection = (props: Props) => {
   return (
-    <Section>
-      <h2>Section</h2>
+    <Section middled centered>
+      <h2>I like making</h2>
+      <Card>
+        <h3>Accessible</h3>
+      </Card>
     </Section>
   )
 };

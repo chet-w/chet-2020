@@ -25,6 +25,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 5rem;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   h3 {
     font-size: 2rem;
   }
