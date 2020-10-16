@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
 import { Section } from '../Section';
+import { Accent } from "../Accent"
 import { Card, CardContainer } from './styles';
 import FadeInUp from "../Animations/FadeInUp"
 
@@ -29,7 +30,7 @@ export const AboutSection = (props: Props) => {
           transition={{ delay: 0.2 }}
         >
           <Card>
-            <h3>Slick</h3>
+            <h3><Accent>Delightful</Accent></h3>
           </Card>
         </FadeInUp>
         <FadeInUp
@@ -37,7 +38,7 @@ export const AboutSection = (props: Props) => {
           transition={{ delay: 0.4 }}
         >
           <Card>
-            <h3>Modern</h3>
+            <h3><Accent>Modern</Accent></h3>
           </Card>
         </FadeInUp>
         <FadeInUp
@@ -45,7 +46,7 @@ export const AboutSection = (props: Props) => {
           transition={{ delay: 0.6 }}
         >
           <Card>
-            <h3>Accessible</h3>
+            <h3><Accent>Accessible</Accent></h3>
           </Card>
         </FadeInUp>
       </CardContainer>
