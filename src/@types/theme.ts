@@ -27,7 +27,8 @@ interface IColorSet {
   tint: string,
   base: string,
   shade: string,
-  gradient?: string
+  gradientY?: string,
+  gradientX?: string
 };
 
 interface INeutralColorSet {

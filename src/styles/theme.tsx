@@ -12,7 +12,8 @@ export default {
         tint: "#00c0fc",
         base: "#00a1f7",
         shade: "#006aef",
-        gradient: "linear-gradient(#00c0fc, #006aef)"
+        gradientY: "linear-gradient(#00c0fc, #006aef)",
+        gradientX: "linear-gradient(to left, #00c0fc, #006aef)"
       },
       secondary: {
         tint: "green",
