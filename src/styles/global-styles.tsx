@@ -25,8 +25,16 @@ const GlobalStyles = createGlobalStyle`
     font-size: 5rem;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   h3 {
     font-size: 2rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
   }
 `;
 
