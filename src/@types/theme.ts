@@ -26,7 +26,9 @@ export interface ITheme {
 interface IColorSet {
   tint: string,
   base: string,
-  shade: string
+  shade: string,
+  gradientY?: string,
+  gradientX?: string
 };
 
 interface INeutralColorSet {
