@@ -9,9 +9,10 @@ export default {
   colors: {
     light: {
       primary: {
-        tint: "red",
-        base: "red",
-        shade: "red",
+        tint: "#00c0fc",
+        base: "#00a1f7",
+        shade: "#006aef",
+        gradient: "linear-gradient(#00c0fc, #006aef)"
       },
       secondary: {
         tint: "green",
