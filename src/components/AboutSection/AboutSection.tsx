@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
 import { Section } from '../Section';
 import { Card } from './styles';
 import FadeInUp from "../Animations/FadeInUp"
@@ -9,20 +10,17 @@ interface Props {
 
 export const AboutSection = (props: Props) => {
 
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-  const AboutSectionRef = useRef(null);
-
+  const { ref, inView, entry } = useInView({ threshold: 0.8 });
 
   return (
     <Section
       middled 
       centered
-      ref={AboutSectionRef}
+      ref={ref}
     >
       <h2>I like making</h2>
-      <button onClick={() => setShouldAnimate(!shouldAnimate)}>fade in </button>
       <FadeInUp
-        shouldAnimate={shouldAnimate}
+        shouldAnimate={inView}
       >
         <Card>
           <h3>Accessible</h3>
