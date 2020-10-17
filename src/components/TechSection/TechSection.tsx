@@ -1,13 +1,14 @@
 import React from 'react';
+import { graphql } from "gatsby";
 import { Section } from "../Section"
 import { LogoContainer } from "./styles";
 import { Accent } from "../Accent"
 
 interface Props {
-  
+  data?: any 
 }
 
-export const TechSection = (props: Props) => {
+export default TechSection = (props: Props) => {
   return (
     <Section
       centered
@@ -28,8 +29,31 @@ export const TechSection = (props: Props) => {
         <img alt="react-testing-library" src={require("../../images/react-testing-library.png")} />
         <img alt="typescript" src={require("../../images/typescript.svg")} />
         <img alt="jest" src={require("../../images/jest.svg")} />
-        
       </LogoContainer>
     </Section>
   )
 };
+
+export const query = graphql`
+  query GetAllLogos {
+    logos: allFile(filter: {relativeDirectory: {eq: "logos"}}) {
+      edges {
+        node {
+          id
+          name
+          relativeDirectory
+          childImageSharp {
+            fluid {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+            }
+          }
+        }
+      }
+    }
+  }
+`;
