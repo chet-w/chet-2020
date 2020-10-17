@@ -17,13 +17,13 @@ export const LogoContainer = styled.div`
 
   .gatsby-image-wrapper {
     width: 300px;
-    margin: 1rem;
+    margin: 3rem 1rem;
   }
 `;
 
 export const Heading = styled.div`
     width: 300px;
-    padding: 0;
+    margin: 3rem 1rem;
     filter: none;
     display: flex;
     flex-direction: column;
