@@ -8,7 +8,6 @@ export const LogoContainer = styled.div`
 
   & img {
     width: 300px;
-    padding: 2.5rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

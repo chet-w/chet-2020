@@ -21,7 +21,7 @@ export const TechSection = (props: Props) => {
             relativeDirectory
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
@@ -52,7 +52,9 @@ export const TechSection = (props: Props) => {
         <img alt="typescript" src={require("../../images/logos/typescript.svg")} />
         <img alt="jest" src={require("../../images/logos/jest.svg")} /> */}
         {logos && logos.map((logo: any) => (
-          <Img fluid={logo.node.childImageSharp.fluid} />
+          <Img
+            fluid={logo.node.childImageSharp.fluid}
+          />
         ))}
       </LogoContainer>
     </Section>
