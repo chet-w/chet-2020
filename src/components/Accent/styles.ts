@@ -6,4 +6,6 @@ export const Accent = styled.span`
   background: ${(props: IGlobalStyles) => props.theme.colors.light.primary.gradientY};
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin: 0 0.25rem;
 `;
