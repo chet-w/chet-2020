@@ -1,3 +1,1 @@
-import TechSection from "./TechSection"
-
-export { TechSection } 
+export { TechSection } from "./TechSection"
